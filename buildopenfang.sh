@@ -52,7 +52,7 @@ WDIR=$CPW/$DIR/buildroot-$BUILDROOT_VERSION
 
 # Patch buildroot if gcc >= 5
 #
-GCCVER=$(gcc -dumpversion)
+GCCVER=$(gcc -dumpversion | head -c 1)
 echo "GCC version: $GCCVER"
 if [ "$GCCVER" -ge "5" ]; then
   cp "$CPW"/patches/automake.in.patch "$WDIR"/package/automake
