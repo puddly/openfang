@@ -21,5 +21,5 @@ RUN \
   bc
 
 RUN locale-gen --no-purge en_US.UTF-8
-RUN git clone https://github.com/anmaped/openfang/ /root/openfang
+RUN git clone https://github.com/puddly/openfang/ /root/openfang
 WORKDIR /root/openfang
